@@ -1,0 +1,283 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color:#3d4b91
+}
+
+.navbar {
+    background-color: #333; 
+}
+
+.nav-link {
+    color: #8BC34A; 
+}
+
+.navbar-brand {
+    font-size: 30px;
+    font-weight: 500;
+    color: #FFF;
+}
+
+#main_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;  
+    width: 100vw; 
+    background-color: #3d4b91;
+}
+
+.gen_box {
+    height: 80vh;
+    width: 35vw;
+    max-width: 500px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); 
+    background: #159ab7; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+    padding: 1rem; 
+    margin: 1rem;
+}
+
+.header {
+    padding: 1.5rem;
+    border-radius: 10px;
+    margin-top: 1rem;
+    background-color: #FFFAF0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); 
+    text-align: center;
+    color: #333;
+}
+
+.user_input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+    width: 100%;
+}
+
+.range_container {
+    width: 100%;
+    margin-bottom: 1.5rem; 
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.checkboxes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 1.5rem; 
+}
+
+.form-check {
+    margin-bottom: 0.75rem; 
+}
+
+button {
+    background: #2c6493; 
+    color: #FFF; 
+    margin-top: 1rem;
+    
+    padding: 0.75rem 1.5rem; 
+    border-radius: 10px; 
+    font-size: 1.1rem; 
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0s; 
+}
+
+button:hover {
+    background: #E64A19; 
+    transform: scale(1.05); 
+}
+
+button:active {
+    background: #D84315;
+    transform: scale(0.95); 
+}
+#password {
+    background-color: whitesmoke;
+    width: 90%;
+    height: 10%;
+    margin-top: 1.5rem;
+    border-radius: 3%;
+}
+.form-check {
+    font-size: 18px;
+    font-weight: 550;
+    transition: color 0.3s, transform 0.3s;
+
+}
+.form-check:hover { 
+    transform: scale(1.2); 
+}
+.form-check:active { 
+    color: red; 
+}
+.form-range::-webkit-slider-thumb {
+    background-color: #007bff; 
+    transition: background-color 0.3s;
+}
+
+.form-range:active::-webkit-slider-thumb {
+    background-color: #ff4500; 
+}
+
+
+
+footer {
+    background-color: #1c1e26;
+    color: #fff;
+    width: 100%;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    text-align: center;
+}
+
+#footer_text {
+    color: #d3d3d3;
+}
+
+#social_media .social-icon i {
+    color: #d3d3d3;
+}
+
+#social_media .social-icon:last-child {
+    margin-right: 15px;
+}
+
+#password {
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 550;
+}
+.form-input-label:hover {
+    transform: scale(1.2);
+    color: red;
+}
+
+
+@media (max-width: 768px) {
+    body {
+        background-color: #3d4b91;
+        font-size: 16px; 
+    }
+
+    .navbar {
+        background-color: #333;
+    }
+
+    .navbar-brand {
+        font-size: 24px; 
+    }
+
+    #main_box {
+        height: auto; 
+        width: 90vw; 
+    }
+
+    .gen_box {
+        height: auto;
+        width: 90vw;
+        max-width: none;
+        padding: 1rem; 
+    }
+
+    .header {
+        padding: 1rem;
+        font-size: 16px; 
+    }
+
+    .user_input {
+        margin-top: 1rem; 
+    }
+
+    .range_container,
+    .checkboxes {
+        font-size: 16px; 
+    }
+
+    button {
+        padding: 0.5rem 1rem; 
+        font-size: 1rem;
+    }
+
+    #password {
+        width: 100%; 
+        height: auto; 
+        font-size: 18px; 
+    }
+
+    .form-check {
+        font-size: 16px; 
+    }
+
+    .form-range::-webkit-slider-thumb {
+        background-color: #007bff;
+    }
+}
+
+
+@media (min-width: 769px) and (max-width: 992px) {
+    body {
+        font-size: 18px; 
+    }
+
+    .navbar-brand {
+        font-size: 28px; 
+    }
+
+    #main_box {
+        height: auto; 
+        width: 80vw; 
+    }
+
+    .gen_box {
+        height: auto;
+        width: 50vw; 
+    }
+
+    .header {
+        padding: 1.25rem; 
+    }
+
+    .user_input {
+        margin-top: 1.5rem; 
+    }
+
+   
+    .checkboxes {
+        font-size: 18px; 
+    }
+
+    button {
+        padding: 0.75rem 1.25rem; 
+        font-size: 1.1rem; 
+    }
+
+    #password {
+        font-size: 18px; 
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
